@@ -253,19 +253,19 @@ def main():
         c = ina260.current
         v = ina260.voltage
         p = ina260.power
-        print("Current: %.2f Voltage: %.2f Power:%.2f" %(c, v, p))
+        print("Current: %.2f Voltage: %.2f Power: %.2f" %(c, v, p))
         display.set_cursor(0, 0)
         display.puts('Current:')
         display.set_cursor(1, 0)
-        display.puts(' ' + str("{0:.2f}".format(c)))
+        display.puts(' ' + str("{0:.2f}".format(c)) + '     ')
         display.set_cursor(2, 0)
         display.puts('Voltage:')
         display.set_cursor(3, 0)
-        display.puts(' ' + str("{0:.2f}".format(v)))
+        display.puts(' ' + str("{0:.2f}".format(v)) + '     ')
         display.set_cursor(4, 0)
         display.puts('Power:')
         display.set_cursor(5, 0)
-        display.puts(' ' + str("{0:.2f}".format(p)))
+        display.puts(' ' + str("{0:.2f}".format(p)) + '     ')
         time.sleep(1)
 
 if __name__ == "__main__":
