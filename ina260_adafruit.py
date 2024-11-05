@@ -1,3 +1,5 @@
+import os
+os.environ['BLINKA_FT232H'] = '1'  # 環境変数の設定
 import time
 import board
 import adafruit_ina260

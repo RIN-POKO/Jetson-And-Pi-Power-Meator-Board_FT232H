@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+import os
+os.environ['BLINKA_FT232H'] = '1'  # 環境変数の設定
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation

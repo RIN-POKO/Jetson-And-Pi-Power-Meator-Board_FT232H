@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import os
+os.environ['BLINKA_FT232H'] = '1'  # 環境変数の設定
+
 import time
 import subprocess
 
