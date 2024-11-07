@@ -8,7 +8,7 @@ import matplotlib.animation as animation
 #import thermal_zone
 
 NUM_BUF_POINTS = 180
-PLOT_INTERVAL = 1000
+PLOT_INTERVAL = 100    # msec
 
 Data = None
 
