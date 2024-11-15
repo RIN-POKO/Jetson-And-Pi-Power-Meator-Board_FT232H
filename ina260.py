@@ -27,7 +27,7 @@ while True:
         i2c.readfrom_into(device_address, buffer)
 
         # 16ビットのデータを取得し、バイトオーダーを変換
-        word = (buffer[1] << 8) | buffer[0]  # 元のコードと同様のエンディアン変換
+        word = (buffer[1] << 8) | buffer[0]  # エンディアン変換
         result = ((word << 8) & 0xFF00) + (word >> 8)  # 上位と下位バイトの入れ替え
 
         # 電圧計算
